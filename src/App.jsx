@@ -4,6 +4,7 @@ import Section from './components/Section';
 import OpenLink from './components/OpenLink';
 import CopyLink from './components/CopyLink';
 import HelpfulResource from './components/HelpfulResource';
+import AboutMe from './components/AboutMe';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           label="React Hooks Tutorial on MDN"
           link="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind"
         />
+        <AboutMe/>
       </Section>
     </div>
   );
