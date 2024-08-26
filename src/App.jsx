@@ -1,6 +1,9 @@
 import React from 'react';
 import Header from './components/Header';
 import Section from './components/Section';
+import OpenLink from './components/OpenLink';
+import CopyLink from './components/CopyLink';
+import HelpfulResource from './components/HelpfulResource';
 
 function App() {
   return (
@@ -17,6 +20,20 @@ function App() {
           <li>Large and active community with abundant resources and support</li>
           <li>Ability to build both web and mobile applications with React Native</li>
         </ul>
+      </Section>
+      <Section title="Helpful Resources">
+        <HelpfulResource
+          label="Official React Documentation"
+          link="https://reactjs.org/"
+        />
+        <HelpfulResource
+          label="React Tutorial on Scrimba"
+          link="https://scrimba.com/learn/react"
+        />
+        <HelpfulResource
+          label="React Hooks Tutorial on MDN"
+          link="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind"
+        />
       </Section>
     </div>
   );
