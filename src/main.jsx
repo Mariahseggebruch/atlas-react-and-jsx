@@ -13,5 +13,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-// Render the App component to the root element
