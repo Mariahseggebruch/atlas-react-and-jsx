@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const SocialLinks = () => {
   const linkedInUrl = 'https://www.linkedin.com/in/mariahseggebruch/';
   const githubUrl = 'https://github.com/Mariahseggebruch/atlas-react-and-jsx'; // Assuming this is the project's repository
