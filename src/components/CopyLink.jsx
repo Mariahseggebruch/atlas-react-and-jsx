@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import copySvg from '../assets/copy.svg'
 
 const CopyLink = ({ link }) => {
   const [isCopied, setIsCopied] = useState(false);
@@ -13,7 +14,7 @@ const CopyLink = ({ link }) => {
 
   return (
     <img
-      src="/src/assets/copy.svg"
+      src={copySvg}
       alt="Copy link"
       className="copy"
       onClick={handleCopy}
