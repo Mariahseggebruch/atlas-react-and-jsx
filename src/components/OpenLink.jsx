@@ -1,9 +1,10 @@
 import React from 'react';
+import openSvg from '../assets/open.svg'
 
 const OpenLink = ({ link }) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <img src="/src/assets/open.svg" alt="Open link" />
+        <img src={openSvg} alt='open link' />
     </a>
   );
 };

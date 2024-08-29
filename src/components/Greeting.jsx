@@ -1,4 +1,7 @@
 import React from 'react';
+import dayTimeImage from '../assets/day.svg';
+import eveningImage from '../assets/evening.svg';
+import nightTimeImage from '../assets/night.svg';
 
 const Greeting = () => {
   const date = new Date();
@@ -8,16 +11,16 @@ const Greeting = () => {
   let greetingText;
 
   if (hour >= 6 && hour < 12) {
-    imageSrc = '/src/assets/day.svg';
+    <img src={dayTimeImage} alt="day" />
     greetingText = 'Good Morning!';
   } else if (hour >= 12 && hour < 17) {
-    imageSrc = '/src/assets/day.svg';
+    <img src={dayTimeImage} alt="day" />
     greetingText = 'Good Afternoon!';
   } else if (hour >= 17 && hour < 21) {
-    imageSrc = '/src/assets/evening.svg';
+    <img src={eveningImage} alt="evening" />
     greetingText = 'Good Evening!';
   } else {
-    imageSrc = '/src/assets/night.svg';
+    <img src={nightTimeImage} alt="night" />
     greetingText = 'Good Night!';
   }
 
