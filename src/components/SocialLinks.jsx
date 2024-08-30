@@ -1,5 +1,6 @@
 import React from 'react';
-
+import linkedinSvg from '../assets/linkedin.svg'
+import githubSvg from '../assets/github.svg'
 
 const SocialLinks = () => {
   const linkedInUrl = 'https://www.linkedin.com/in/mariahseggebruch/';
@@ -12,8 +13,9 @@ const SocialLinks = () => {
         target="_blank"
         rel="noopener noreferrer"
         title="Mariah Seggebruch on LinkedIn"
+        
       >
-        <img src="/src/assets/linkedin.svg" alt="LinkedIn icon" />
+        <img src={linkedinSvg} alt="linkedin" />
       </a>
       <a
         href={githubUrl}
@@ -21,7 +23,7 @@ const SocialLinks = () => {
         rel="noopener noreferrer"
         title="Mariah Seggebruch on GitHub"
       >
-        <img src="/src/assets/github.svg" alt="GitHub icon" />
+        <img src={githubSvg} alt="github" />
       </a>
     </div>
   );
